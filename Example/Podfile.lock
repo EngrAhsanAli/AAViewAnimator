@@ -1,0 +1,16 @@
+PODS:
+  - AAViewAnimator (0.1.0)
+
+DEPENDENCIES:
+  - AAViewAnimator (from `../`)
+
+EXTERNAL SOURCES:
+  AAViewAnimator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AAViewAnimator: b5b0978a5ca0c5facca077464d24524c9b7fe7ce
+
+PODFILE CHECKSUM: c297a386fd07e9e682895ac79327070c292ece4d
+
+COCOAPODS: 1.2.0

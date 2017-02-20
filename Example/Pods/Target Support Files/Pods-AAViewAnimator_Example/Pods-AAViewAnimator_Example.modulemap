@@ -1,0 +1,6 @@
+framework module Pods_AAViewAnimator_Example {
+  umbrella header "Pods-AAViewAnimator_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

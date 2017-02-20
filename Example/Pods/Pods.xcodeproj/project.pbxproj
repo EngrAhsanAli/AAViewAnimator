@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B53F9462CC2389E8E6052AB893E676F /* Pods-AAViewAnimator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A496351EF8C17CD560F79B7486B834 /* Pods-AAViewAnimator_Example-dummy.m */; };
+		42F45A361E56197400BF7777 /* AAViewAnimator+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F45A351E56197400BF7777 /* AAViewAnimator+UIKit.swift */; };
+		42F45A381E5628BB00BF7777 /* AAViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F45A371E5628BB00BF7777 /* AAViewAnimator.swift */; };
+		42F45A3A1E562A3C00BF7777 /* AAViewAnimator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F45A391E562A3C00BF7777 /* AAViewAnimator+Helper.swift */; };
+		4ACB240543196DD6CBF24E37826C758F /* Pods-AAViewAnimator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D68B143B9E4F58B5A18E9016974C236D /* Pods-AAViewAnimator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54509327BF67A67ED34BDC79E9AC79E4 /* AAViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD35FE6C26D4A70D0920264F99ABD58 /* AAViewAnimator-dummy.m */; };
+		6513636F85CCEB824F2D642D335A1481 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		796CBE3440C4303F9E38CFFB537CFC89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B76348F1F7A266EC92A8AD2C51FFC67B /* AAViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9427F040BAAFF4B592F362D62247DAF9 /* AAViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E012F03DE3C85604BFF7B5E4D6EC916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E2C456FF19D8317B27BE1A2BE324D5;
+			remoteInfo = AAViewAnimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		066443D8E0E7E1CB75C0B8EB3A03FE99 /* AAViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		107DB61E045935F013C89A9050F189BD /* AAViewAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAViewAnimator.xcconfig; sourceTree = "<group>"; };
+		291B14541080C6DF13B26265514DAEE9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F59D88A5EBC953100896900F6673357 /* Pods-AAViewAnimator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAViewAnimator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		335C159229F7CA99EB04C0A63099DB5A /* Pods-AAViewAnimator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAViewAnimator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		42F45A351E56197400BF7777 /* AAViewAnimator+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AAViewAnimator+UIKit.swift"; sourceTree = "<group>"; };
+		42F45A371E5628BB00BF7777 /* AAViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAViewAnimator.swift; sourceTree = "<group>"; };
+		42F45A391E562A3C00BF7777 /* AAViewAnimator+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AAViewAnimator+Helper.swift"; sourceTree = "<group>"; };
+		533DCEED476EE4C2DE59CC9DEC96F6AF /* Pods-AAViewAnimator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAViewAnimator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		587BE9958BF509692B5AD1AC1A6B04B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1B1FFF3DB7A7447ED6BAD69E230293 /* Pods-AAViewAnimator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAViewAnimator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		717F52695221FE9B1B53B07CB7350B53 /* Pods-AAViewAnimator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAViewAnimator_Example.modulemap"; sourceTree = "<group>"; };
+		86A496351EF8C17CD560F79B7486B834 /* Pods-AAViewAnimator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAViewAnimator_Example-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9427F040BAAFF4B592F362D62247DAF9 /* AAViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAViewAnimator-umbrella.h"; sourceTree = "<group>"; };
+		978546BAE783F9353C694E341FD4FBDC /* Pods_AAViewAnimator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAViewAnimator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C869F4F48AD52AD9DC4B41AB891882E8 /* AAViewAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAViewAnimator-prefix.pch"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D68B143B9E4F58B5A18E9016974C236D /* Pods-AAViewAnimator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAViewAnimator_Example-umbrella.h"; sourceTree = "<group>"; };
+		E4588627BD01FE4BBF2BD199E2D3F760 /* Pods-AAViewAnimator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAViewAnimator_Example-resources.sh"; sourceTree = "<group>"; };
+		ECD35FE6C26D4A70D0920264F99ABD58 /* AAViewAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAViewAnimator-dummy.m"; sourceTree = "<group>"; };
+		F285588B82FB788669AE5AFBC6E99615 /* Pods-AAViewAnimator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAViewAnimator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FE7CB332AE57D18AD7DB779F0B51AE2A /* AAViewAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAViewAnimator.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FCFD77AFE5CE51C551743D46FD795BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796CBE3440C4303F9E38CFFB537CFC89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95AB9F456C642B036A1DF8731032FEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6513636F85CCEB824F2D642D335A1481 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		116907F7C24E3175177BB41E4B71D1CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE7CB332AE57D18AD7DB779F0B51AE2A /* AAViewAnimator.modulemap */,
+				107DB61E045935F013C89A9050F189BD /* AAViewAnimator.xcconfig */,
+				ECD35FE6C26D4A70D0920264F99ABD58 /* AAViewAnimator-dummy.m */,
+				C869F4F48AD52AD9DC4B41AB891882E8 /* AAViewAnimator-prefix.pch */,
+				9427F040BAAFF4B592F362D62247DAF9 /* AAViewAnimator-umbrella.h */,
+				587BE9958BF509692B5AD1AC1A6B04B9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AAViewAnimator";
+			sourceTree = "<group>";
+		};
+		2C967DB988AEF4B6EB17A637DFF6C8B6 /* AAViewAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				823659F1AA4481A9F1A51259CBE2A7EB /* Classes */,
+			);
+			path = AAViewAnimator;
+			sourceTree = "<group>";
+		};
+		402023965D59D6532E54380759360F6B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6F88A98F9280C2A0C9D6FBDDD81A3BC /* AAViewAnimator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6B6E7DC06B739705E04A5C4780E90F57 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9208A72A05372B3E47B5C29260DF9095 /* Pods-AAViewAnimator_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		752FC76B0F778244FD9B848B45BC7A29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				066443D8E0E7E1CB75C0B8EB3A03FE99 /* AAViewAnimator.framework */,
+				978546BAE783F9353C694E341FD4FBDC /* Pods_AAViewAnimator_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				402023965D59D6532E54380759360F6B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				752FC76B0F778244FD9B848B45BC7A29 /* Products */,
+				6B6E7DC06B739705E04A5C4780E90F57 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		823659F1AA4481A9F1A51259CBE2A7EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42F45A371E5628BB00BF7777 /* AAViewAnimator.swift */,
+				42F45A391E562A3C00BF7777 /* AAViewAnimator+Helper.swift */,
+				42F45A351E56197400BF7777 /* AAViewAnimator+UIKit.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9208A72A05372B3E47B5C29260DF9095 /* Pods-AAViewAnimator_Example */ = {
+			isa = PBXGroup;
+			children = (
+				291B14541080C6DF13B26265514DAEE9 /* Info.plist */,
+				717F52695221FE9B1B53B07CB7350B53 /* Pods-AAViewAnimator_Example.modulemap */,
+				2F59D88A5EBC953100896900F6673357 /* Pods-AAViewAnimator_Example-acknowledgements.markdown */,
+				533DCEED476EE4C2DE59CC9DEC96F6AF /* Pods-AAViewAnimator_Example-acknowledgements.plist */,
+				86A496351EF8C17CD560F79B7486B834 /* Pods-AAViewAnimator_Example-dummy.m */,
+				F285588B82FB788669AE5AFBC6E99615 /* Pods-AAViewAnimator_Example-frameworks.sh */,
+				E4588627BD01FE4BBF2BD199E2D3F760 /* Pods-AAViewAnimator_Example-resources.sh */,
+				D68B143B9E4F58B5A18E9016974C236D /* Pods-AAViewAnimator_Example-umbrella.h */,
+				5B1B1FFF3DB7A7447ED6BAD69E230293 /* Pods-AAViewAnimator_Example.debug.xcconfig */,
+				335C159229F7CA99EB04C0A63099DB5A /* Pods-AAViewAnimator_Example.release.xcconfig */,
+			);
+			name = "Pods-AAViewAnimator_Example";
+			path = "Target Support Files/Pods-AAViewAnimator_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6F88A98F9280C2A0C9D6FBDDD81A3BC /* AAViewAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				2C967DB988AEF4B6EB17A637DFF6C8B6 /* AAViewAnimator */,
+				116907F7C24E3175177BB41E4B71D1CC /* Support Files */,
+			);
+			name = AAViewAnimator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AF8FD4E0927214EEDFD5EE31064EFFBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACB240543196DD6CBF24E37826C758F /* Pods-AAViewAnimator_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2AA1087DB3953D288A09073983EF23C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76348F1F7A266EC92A8AD2C51FFC67B /* AAViewAnimator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0265DBB5A2931DAA5473E7FD77D93BD3 /* Pods-AAViewAnimator_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD1868D18246B34C2749C596E73C7F8 /* Build configuration list for PBXNativeTarget "Pods-AAViewAnimator_Example" */;
+			buildPhases = (
+				5681B25A816F3559CA5736DCB839CD39 /* Sources */,
+				95AB9F456C642B036A1DF8731032FEC6 /* Frameworks */,
+				AF8FD4E0927214EEDFD5EE31064EFFBF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BBF944319409A2A52C89BAD7490C993 /* PBXTargetDependency */,
+			);
+			name = "Pods-AAViewAnimator_Example";
+			productName = "Pods-AAViewAnimator_Example";
+			productReference = 978546BAE783F9353C694E341FD4FBDC /* Pods_AAViewAnimator_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84E2C456FF19D8317B27BE1A2BE324D5 /* AAViewAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F490D58E5861B3724BC14D260D777500 /* Build configuration list for PBXNativeTarget "AAViewAnimator" */;
+			buildPhases = (
+				363FE4E8C047586B45DA1EADDE6B289B /* Sources */,
+				5FCFD77AFE5CE51C551743D46FD795BD /* Frameworks */,
+				E2AA1087DB3953D288A09073983EF23C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AAViewAnimator;
+			productName = AAViewAnimator;
+			productReference = 066443D8E0E7E1CB75C0B8EB3A03FE99 /* AAViewAnimator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0265DBB5A2931DAA5473E7FD77D93BD3 = {
+						LastSwiftMigration = 0820;
+					};
+					84E2C456FF19D8317B27BE1A2BE324D5 = {
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 752FC76B0F778244FD9B848B45BC7A29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E2C456FF19D8317B27BE1A2BE324D5 /* AAViewAnimator */,
+				0265DBB5A2931DAA5473E7FD77D93BD3 /* Pods-AAViewAnimator_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363FE4E8C047586B45DA1EADDE6B289B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F45A361E56197400BF7777 /* AAViewAnimator+UIKit.swift in Sources */,
+				54509327BF67A67ED34BDC79E9AC79E4 /* AAViewAnimator-dummy.m in Sources */,
+				42F45A381E5628BB00BF7777 /* AAViewAnimator.swift in Sources */,
+				42F45A3A1E562A3C00BF7777 /* AAViewAnimator+Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5681B25A816F3559CA5736DCB839CD39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B53F9462CC2389E8E6052AB893E676F /* Pods-AAViewAnimator_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BBF944319409A2A52C89BAD7490C993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AAViewAnimator;
+			target = 84E2C456FF19D8317B27BE1A2BE324D5 /* AAViewAnimator */;
+			targetProxy = 6E012F03DE3C85604BFF7B5E4D6EC916 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24FE504837B9E05665F5EDBB3EA56897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335C159229F7CA99EB04C0A63099DB5A /* Pods-AAViewAnimator_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AAViewAnimator_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AAViewAnimator_Example/Pods-AAViewAnimator_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AAViewAnimator_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E813C15271FA780866E11969DA352AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107DB61E045935F013C89A9050F189BD /* AAViewAnimator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAViewAnimator/AAViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAViewAnimator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAViewAnimator/AAViewAnimator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AAViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F2FE28C8684B12FF00889407ADEF3A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107DB61E045935F013C89A9050F189BD /* AAViewAnimator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAViewAnimator/AAViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAViewAnimator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAViewAnimator/AAViewAnimator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AAViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCD1721DFB2842F42457C0DD271E27BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1B1FFF3DB7A7447ED6BAD69E230293 /* Pods-AAViewAnimator_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AAViewAnimator_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AAViewAnimator_Example/Pods-AAViewAnimator_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AAViewAnimator_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD1868D18246B34C2749C596E73C7F8 /* Build configuration list for PBXNativeTarget "Pods-AAViewAnimator_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD1721DFB2842F42457C0DD271E27BD /* Debug */,
+				24FE504837B9E05665F5EDBB3EA56897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F490D58E5861B3724BC14D260D777500 /* Build configuration list for PBXNativeTarget "AAViewAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2FE28C8684B12FF00889407ADEF3A70 /* Debug */,
+				5E813C15271FA780866E11969DA352AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

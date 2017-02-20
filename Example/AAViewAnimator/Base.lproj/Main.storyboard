@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ids-0e-x3O">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo AAViewAnimator-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AAViewAnimator_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Khz-uL-REQ">
+                                <rect key="frame" x="0.0" y="160" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963130000001" blue="0.50411147560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="MOw-cu-iIT"/>
+                                    <constraint firstAttribute="width" constant="50" id="vVU-e8-dOd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="From Top">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromTopAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xgG-EK-BTL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kuU-dO-vVL">
+                                <rect key="frame" x="0.0" y="230" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963130000001" blue="0.50411147560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Wh1-h4-R9k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="From Bottom">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromBottomAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dOK-Ca-7LD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="a8l-4v-bgz">
+                                <rect key="frame" x="0.0" y="300" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963130000001" blue="0.50411147560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="70p-lD-y1f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="From Left">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromLeftAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jBH-Yd-hc9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tyf-H5-3qe">
+                                <rect key="frame" x="0.0" y="370" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963130000001" blue="0.50411147560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1wK-XR-iFC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="From Right">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fromRightAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xgx-Zh-cpF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EyD-V0-AAu">
+                                <rect key="frame" x="0.0" y="440" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963130000001" blue="0.50411147560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cqM-Ja-q9i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="From Fade">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fadeAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sPk-Fy-PgO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Cvw-PC-X09">
+                                <rect key="frame" x="270" y="160" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963131024582" blue="0.50411147559158809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KyC-Ll-S6F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="To Top">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toTopAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZLK-Ll-3w4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oW3-zC-BPU">
+                                <rect key="frame" x="270" y="230" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963131024582" blue="0.50411147559158809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="To Bottom">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toBottomAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LNd-z6-Efr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nWY-LQ-nzM">
+                                <rect key="frame" x="270" y="300" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963131024582" blue="0.50411147559158809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="To Left">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toLeftAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="efo-JI-jnI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pti-cE-dWK">
+                                <rect key="frame" x="270" y="370" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963131024582" blue="0.50411147559158809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="To Right">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toRightAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qrn-5W-TPv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="So7-hx-FE2">
+                                <rect key="frame" x="270" y="440" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.57103263420000006" green="0.46079963131024582" blue="0.50411147559158809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="To Fade">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toFadeAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6eu-3r-AzT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EPP-4y-R35">
+                                <rect key="frame" x="212" y="64" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.29559852905400164" green="0.57103263420000006" blue="0.35522610632754564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3YU-k0-6Tg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="Vibrate Y">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="vibrateYAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="14I-kz-qUf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="S8l-ZG-0jM">
+                                <rect key="frame" x="58" y="508" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.29559852905400164" green="0.57103263420000006" blue="0.35522610632754564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="b1H-qg-WYF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="Rotate Left">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateLeftAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YpB-xb-oaT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Snl-S2-enl">
+                                <rect key="frame" x="135" y="508" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.29559852905400164" green="0.57103263420000006" blue="0.35522610632754564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="Rotate Right">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateRightAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bDN-uC-LVw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5CS-n4-H9z">
+                                <rect key="frame" x="212" y="508" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.29559852905400164" green="0.57103263420000006" blue="0.35522610632754564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="Rotate Round">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateRoundAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gY5-Kz-wUt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CY6-j3-26s">
+                                <rect key="frame" x="135" y="64" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.29559852905400164" green="0.57103263420000006" blue="0.35522610632754564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="HjQ-B6-Zwr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="Vibrate X">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="vibrateXAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Kb-tH-mS4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-Dp-5pE">
+                                <rect key="frame" x="58" y="64" width="50" height="60"/>
+                                <color key="backgroundColor" red="0.29559852905400164" green="0.57103263420000006" blue="0.35522610632754564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="VyX-J1-c5T"/>
+                                    <constraint firstAttribute="height" constant="60" id="uSH-NN-LJR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <state key="normal" title="Scale">
+                                    <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="scaleAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lfm-5B-7y0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FuB-hf-OL0">
+                                <rect key="frame" x="65" y="230" width="190" height="205"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👍🏻" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YW-OL-9MP">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="60"/>
+                                        <color key="backgroundColor" red="0.57103263420000006" green="0.36954095486661392" blue="0.28080443853378728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="gM3-tG-Nbd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gzC-l5-xjy">
+                                        <rect key="frame" x="0.0" y="60" width="190" height="82"/>
+                                        <color key="backgroundColor" red="0.57103263420000006" green="0.46079963130000001" blue="0.50411147560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="tDi-JR-ex2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                        <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                                        <state key="normal" title="Click me for Hybrid Animation"/>
+                                        <connections>
+                                            <action selector="hybridAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZtK-Bf-UmQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do It !" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh4-vo-t15">
+                                        <rect key="frame" x="0.0" y="141" width="190" height="64"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.69504089199999997" green="0.37791359289999998" blue="0.393651584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4YW-OL-9MP" firstAttribute="leading" secondItem="gzC-l5-xjy" secondAttribute="leading" id="68p-ya-hbR"/>
+                                    <constraint firstAttribute="bottom" secondItem="rh4-vo-t15" secondAttribute="bottom" id="72S-w9-Epi"/>
+                                    <constraint firstItem="gzC-l5-xjy" firstAttribute="leading" secondItem="rh4-vo-t15" secondAttribute="leading" id="9tF-IY-U4k"/>
+                                    <constraint firstAttribute="trailing" secondItem="4YW-OL-9MP" secondAttribute="trailing" id="IvN-N0-odb"/>
+                                    <constraint firstItem="gzC-l5-xjy" firstAttribute="trailing" secondItem="rh4-vo-t15" secondAttribute="trailing" id="NGt-LQ-xV1"/>
+                                    <constraint firstItem="4YW-OL-9MP" firstAttribute="trailing" secondItem="gzC-l5-xjy" secondAttribute="trailing" id="Ou4-v3-sxB"/>
+                                    <constraint firstItem="4YW-OL-9MP" firstAttribute="leading" secondItem="FuB-hf-OL0" secondAttribute="leading" id="dWv-YK-LRl"/>
+                                    <constraint firstItem="rh4-vo-t15" firstAttribute="top" secondItem="gzC-l5-xjy" secondAttribute="bottom" constant="-1" id="fpV-Qk-MvI"/>
+                                    <constraint firstItem="4YW-OL-9MP" firstAttribute="top" secondItem="FuB-hf-OL0" secondAttribute="top" id="jVG-HH-9ci"/>
+                                    <constraint firstItem="gzC-l5-xjy" firstAttribute="top" secondItem="4YW-OL-9MP" secondAttribute="bottom" id="tFa-Np-Ufx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57103263420000006" green="0.30701072065016349" blue="0.39279375828534369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cfW-Dp-5pE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="42" id="07j-hD-XaD"/>
+                            <constraint firstItem="pti-cE-dWK" firstAttribute="trailing" secondItem="So7-hx-FE2" secondAttribute="trailing" id="1XE-SE-3Qf"/>
+                            <constraint firstItem="EyD-V0-AAu" firstAttribute="top" secondItem="tyf-H5-3qe" secondAttribute="bottom" constant="10" id="23i-Zv-0g8"/>
+                            <constraint firstItem="cfW-Dp-5pE" firstAttribute="bottom" secondItem="CY6-j3-26s" secondAttribute="bottom" id="2nA-YJ-Q1X"/>
+                            <constraint firstItem="Cvw-PC-X09" firstAttribute="leading" secondItem="oW3-zC-BPU" secondAttribute="leading" id="2yl-e2-7Or"/>
+                            <constraint firstAttribute="trailing" secondItem="Cvw-PC-X09" secondAttribute="trailing" id="3Wn-SR-ub1"/>
+                            <constraint firstItem="CY6-j3-26s" firstAttribute="trailing" secondItem="Snl-S2-enl" secondAttribute="trailing" id="3s5-8b-J7b"/>
+                            <constraint firstItem="Khz-uL-REQ" firstAttribute="bottom" secondItem="Cvw-PC-X09" secondAttribute="bottom" id="4mq-RU-bYs"/>
+                            <constraint firstItem="EPP-4y-R35" firstAttribute="trailing" secondItem="5CS-n4-H9z" secondAttribute="trailing" id="54O-d7-2hm"/>
+                            <constraint firstItem="kuU-dO-vVL" firstAttribute="top" secondItem="Khz-uL-REQ" secondAttribute="bottom" constant="10" id="5LA-4M-rEn"/>
+                            <constraint firstItem="tyf-H5-3qe" firstAttribute="top" secondItem="a8l-4v-bgz" secondAttribute="bottom" constant="10" id="5uF-y3-YXQ"/>
+                            <constraint firstItem="EPP-4y-R35" firstAttribute="leading" secondItem="5CS-n4-H9z" secondAttribute="leading" id="7JF-rC-qhX"/>
+                            <constraint firstItem="S8l-ZG-0jM" firstAttribute="firstBaseline" secondItem="Snl-S2-enl" secondAttribute="firstBaseline" id="8Kn-aL-MIm"/>
+                            <constraint firstItem="oW3-zC-BPU" firstAttribute="trailing" secondItem="nWY-LQ-nzM" secondAttribute="trailing" id="8hY-mj-bqT"/>
+                            <constraint firstItem="S8l-ZG-0jM" firstAttribute="baseline" secondItem="Snl-S2-enl" secondAttribute="baseline" id="Anc-bW-fob"/>
+                            <constraint firstItem="FuB-hf-OL0" firstAttribute="top" secondItem="CY6-j3-26s" secondAttribute="bottom" constant="106" id="BV4-8q-6Ar"/>
+                            <constraint firstItem="CY6-j3-26s" firstAttribute="firstBaseline" secondItem="EPP-4y-R35" secondAttribute="firstBaseline" id="Be0-LB-jhr"/>
+                            <constraint firstItem="CY6-j3-26s" firstAttribute="baseline" secondItem="EPP-4y-R35" secondAttribute="baseline" id="DHU-0w-6aE"/>
+                            <constraint firstItem="tyf-H5-3qe" firstAttribute="top" secondItem="pti-cE-dWK" secondAttribute="top" id="EKY-k6-kHr"/>
+                            <constraint firstItem="S8l-ZG-0jM" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="EVd-fW-nXU"/>
+                            <constraint firstItem="FuB-hf-OL0" firstAttribute="centerX" secondItem="Snl-S2-enl" secondAttribute="centerX" id="Fl4-Le-8f8"/>
+                            <constraint firstItem="Snl-S2-enl" firstAttribute="baseline" secondItem="5CS-n4-H9z" secondAttribute="baseline" id="FpC-wg-vz0"/>
+                            <constraint firstItem="Snl-S2-enl" firstAttribute="firstBaseline" secondItem="5CS-n4-H9z" secondAttribute="firstBaseline" id="HGt-YP-e87"/>
+                            <constraint firstItem="a8l-4v-bgz" firstAttribute="trailing" secondItem="tyf-H5-3qe" secondAttribute="trailing" id="IhN-tT-8i9"/>
+                            <constraint firstItem="a8l-4v-bgz" firstAttribute="top" secondItem="kuU-dO-vVL" secondAttribute="bottom" constant="10" id="KHQ-Ro-Kco"/>
+                            <constraint firstItem="tyf-H5-3qe" firstAttribute="firstBaseline" secondItem="pti-cE-dWK" secondAttribute="firstBaseline" id="LQX-IC-B6H"/>
+                            <constraint firstItem="cfW-Dp-5pE" firstAttribute="trailing" secondItem="S8l-ZG-0jM" secondAttribute="trailing" id="LyX-1s-8fz"/>
+                            <constraint firstItem="oW3-zC-BPU" firstAttribute="top" secondItem="kuU-dO-vVL" secondAttribute="top" id="MEE-HO-MUY"/>
+                            <constraint firstItem="cfW-Dp-5pE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Mcl-U2-PRP"/>
+                            <constraint firstItem="EyD-V0-AAu" firstAttribute="bottom" secondItem="So7-hx-FE2" secondAttribute="bottom" id="Mn9-9Z-CJb"/>
+                            <constraint firstItem="pti-cE-dWK" firstAttribute="leading" secondItem="So7-hx-FE2" secondAttribute="leading" id="RHz-Aj-6fo"/>
+                            <constraint firstItem="Khz-uL-REQ" firstAttribute="trailing" secondItem="kuU-dO-vVL" secondAttribute="trailing" id="Um2-VB-B1J"/>
+                            <constraint firstItem="cfW-Dp-5pE" firstAttribute="top" secondItem="CY6-j3-26s" secondAttribute="top" id="VnH-tp-nJd"/>
+                            <constraint firstItem="a8l-4v-bgz" firstAttribute="top" secondItem="nWY-LQ-nzM" secondAttribute="top" id="Vwu-pr-v57"/>
+                            <constraint firstItem="Khz-uL-REQ" firstAttribute="top" secondItem="Cvw-PC-X09" secondAttribute="top" id="X7J-4n-Pei"/>
+                            <constraint firstItem="oW3-zC-BPU" firstAttribute="leading" secondItem="nWY-LQ-nzM" secondAttribute="leading" id="YtX-AM-kEF"/>
+                            <constraint firstItem="oW3-zC-BPU" firstAttribute="bottom" secondItem="kuU-dO-vVL" secondAttribute="bottom" id="Z5X-mK-IaK"/>
+                            <constraint firstItem="Cvw-PC-X09" firstAttribute="trailing" secondItem="oW3-zC-BPU" secondAttribute="trailing" id="aB9-XG-M3p"/>
+                            <constraint firstItem="tyf-H5-3qe" firstAttribute="trailing" secondItem="EyD-V0-AAu" secondAttribute="trailing" id="b8b-sF-aTu"/>
+                            <constraint firstItem="CY6-j3-26s" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cog-pR-lew"/>
+                            <constraint firstItem="Khz-uL-REQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="d60-7I-sk1"/>
+                            <constraint firstItem="kuU-dO-vVL" firstAttribute="leading" secondItem="a8l-4v-bgz" secondAttribute="leading" id="dRM-Fi-BBX"/>
+                            <constraint firstItem="Snl-S2-enl" firstAttribute="top" secondItem="5CS-n4-H9z" secondAttribute="top" id="dg6-pr-9z0"/>
+                            <constraint firstItem="nWY-LQ-nzM" firstAttribute="leading" secondItem="pti-cE-dWK" secondAttribute="leading" id="fkL-GL-S4x"/>
+                            <constraint firstItem="EyD-V0-AAu" firstAttribute="top" secondItem="So7-hx-FE2" secondAttribute="top" id="g1X-N2-dK1"/>
+                            <constraint firstItem="tyf-H5-3qe" firstAttribute="leading" secondItem="EyD-V0-AAu" secondAttribute="leading" id="g66-uk-vHy"/>
+                            <constraint firstItem="Khz-uL-REQ" firstAttribute="leading" secondItem="kuU-dO-vVL" secondAttribute="leading" id="iqZ-pe-ZRi"/>
+                            <constraint firstItem="nWY-LQ-nzM" firstAttribute="trailing" secondItem="pti-cE-dWK" secondAttribute="trailing" id="iuB-1p-08h"/>
+                            <constraint firstItem="tyf-H5-3qe" firstAttribute="baseline" secondItem="pti-cE-dWK" secondAttribute="baseline" id="jH3-lZ-z5u"/>
+                            <constraint firstItem="cfW-Dp-5pE" firstAttribute="leading" secondItem="S8l-ZG-0jM" secondAttribute="leading" id="kcO-BM-ytv"/>
+                            <constraint firstItem="S8l-ZG-0jM" firstAttribute="top" secondItem="Snl-S2-enl" secondAttribute="top" id="loa-b5-fj6"/>
+                            <constraint firstItem="CY6-j3-26s" firstAttribute="leading" secondItem="Snl-S2-enl" secondAttribute="leading" id="q1W-m4-LiN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EPP-4y-R35" secondAttribute="trailing" constant="42" id="ryv-1s-hss"/>
+                            <constraint firstItem="a8l-4v-bgz" firstAttribute="bottom" secondItem="nWY-LQ-nzM" secondAttribute="bottom" id="tTd-ld-Tk3"/>
+                            <constraint firstItem="CY6-j3-26s" firstAttribute="top" secondItem="EPP-4y-R35" secondAttribute="top" id="tze-aa-VTy"/>
+                            <constraint firstItem="kuU-dO-vVL" firstAttribute="trailing" secondItem="a8l-4v-bgz" secondAttribute="trailing" id="vL2-fi-h9W"/>
+                            <constraint firstItem="kuU-dO-vVL" firstAttribute="top" secondItem="FuB-hf-OL0" secondAttribute="top" id="y3C-R6-TwK"/>
+                            <constraint firstItem="a8l-4v-bgz" firstAttribute="leading" secondItem="tyf-H5-3qe" secondAttribute="leading" id="zS1-K5-Mpk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Demo AAViewAnimator" id="CyD-FK-ihM"/>
+                    <connections>
+                        <outlet property="animationView" destination="FuB-hf-OL0" id="i6P-6L-yhi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038.75" y="80.281690140845072"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zVW-yI-zzE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ids-0e-x3O" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5b-eD-qLU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="TSF-YV-gIq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="loF-eP-cl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41.25" y="80.281690140845072"/>
+        </scene>
+    </scenes>
+</document>

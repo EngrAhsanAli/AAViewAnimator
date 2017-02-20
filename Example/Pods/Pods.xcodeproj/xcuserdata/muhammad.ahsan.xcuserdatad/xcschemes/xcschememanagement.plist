@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AAViewAnimator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AAViewAnimator_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0265DBB5A2931DAA5473E7FD77D93BD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84E2C456FF19D8317B27BE1A2BE324D5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E47034DD08E2FE8CAEAFA6546191B68E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

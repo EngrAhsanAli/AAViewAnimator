@@ -1,0 +1,6 @@
+framework module AAViewAnimator {
+  umbrella header "AAViewAnimator-umbrella.h"
+
+  export *
+  module * { export * }
+}

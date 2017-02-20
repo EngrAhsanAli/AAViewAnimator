@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'AAViewAnimator_Example' do
+    pod 'AAViewAnimator', :path => '../'
+    
+end
