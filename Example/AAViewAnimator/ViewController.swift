@@ -73,17 +73,16 @@ class ViewController: UIViewController {
 
     }
     
-    @IBAction func toBottomAction(_ sender: UIButton) {
-        animateWithTransition(.fromBottom)
-        animateSender(sender)
-    }
-    
     @IBAction func fadeAction(_ sender: UIButton) {
         animateWithTransition(.fromFade)
         animateSender(sender)
     }
     
-
+    @IBAction func toBottomAction(_ sender: UIButton) {
+        animateWithTransition(.toBottom)
+        animateSender(sender)
+    }
+    
     @IBAction func toTopAction(_ sender: UIButton) {
         animateWithTransition(.toTop)
         animateSender(sender)
