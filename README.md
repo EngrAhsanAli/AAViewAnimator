@@ -99,7 +99,7 @@ $ brew install carthage
 Then add the following line to your Cartfile:
 
 ```
-github "EngrAhsanAli/AAViewAnimator" 
+github "EngrAhsanAli/AAViewAnimator" "master"
 ```
 
 Then import the library in all files where you use it:
