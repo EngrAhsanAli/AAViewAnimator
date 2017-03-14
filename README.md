@@ -103,7 +103,7 @@ github "EngrAhsanAli/AAViewAnimator" "master"
 ```
 
 Then import the library in all files where you use it:
-```ruby
+```swift
 import AAViewAnimator
 ```
 
@@ -127,7 +127,7 @@ If you prefer not to use either of the above mentioned dependency managers, you 
 You can simply animate your view just by calling `aa_animate` function with animation option
 
 **Usage:**
-```
+```swift
 yourView.aa_animate(duration: 0.5, animation: .scale(rate: 1.2))
 
 ```
@@ -142,7 +142,7 @@ yourView.aa_animate(duration: 0.5, animation: .scale(rate: 1.2))
 You can simply apply transition your view just by calling `aa_animate` function with animation option
 
 **Usage:**
-```
+```swift
 
 yourView.aa_animate(duration: 1.2, springDamping: .slight, animation: animator) { inAnimating in
 if inAnimating {
@@ -157,7 +157,7 @@ else {
 
 
 > Note that the function signature for animation is:
-```func aa_animate(duration: TimeInterval, springDamping: AAViewDamping, animation: AAViewAnimators, completion: ((_ isAnimating: Bool)->())? = nil)```
+```swift func aa_animate(duration: TimeInterval, springDamping: AAViewDamping, animation: AAViewAnimators, completion: ((_ isAnimating: Bool)->())? = nil)```
 
 <div id='section-id-132'/>
 
