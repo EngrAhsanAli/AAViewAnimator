@@ -207,7 +207,7 @@ open class AAViewAnimator {
     fileprivate func rotateRound() {
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.fromValue = 0.0
-        animation.toValue = CGFloat(M_PI * 2.0)
+        animation.toValue = CGFloat(.pi * 2.0)
         animation.duration = duration
         animation.isRemovedOnCompletion = false
         view.layer.add(animation, forKey: "AAViewAnimatorRotation")
