@@ -20,7 +20,7 @@
 
 #AAViewAnimator
 
-[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AAViewAnimator.svg)](http://cocoadocs.org/docsets/AAViewAnimator) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AAViewAnimator.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AAViewAnimator) 
+[![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AAViewAnimator.svg)](http://cocoadocs.org/docsets/AAViewAnimator) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AAViewAnimator.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AAViewAnimator) 
 ![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg) [![CocoaPods](https://img.shields.io/cocoapods/p/AAViewAnimator.svg)]()
 
 
@@ -75,7 +75,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-pod 'AAViewAnimator'
+pod 'AAViewAnimator', '1.0'
 end
 
 ```
@@ -144,7 +144,7 @@ You can simply apply transition your view just by calling `aa_animate` function 
 **Usage:**
 ```swift
 
-yourView.aa_animate(duration: 1.2, springDamping: .slight, animation: animator) { inAnimating in
+yourView.aa_animate(duration: 1.2, springDamping: .slight, animation: animator) { inAnimating, animView in
 if inAnimating {
 // View is animating
 }
@@ -170,7 +170,9 @@ else {
 | `vibrateY(rate:CGFloat)`  | Animation with vibrate at y axis effect |
 | `rotateLeft`      	 	| Animation with left rotation effect	  |
 | `rotateRight`   	 		| Animation with right rotation effect 	  |
-| `rotateRound`     	 	| Animation with round rotation effect	  |
+| `rotateRound`              | Animation with round rotation effect      |
+| `zoomIn`              | Animation with zoom in effect      |
+| `zoomOut`              | Animation with zoom out effect      |
 
 <div id='section-id-150'/>
 

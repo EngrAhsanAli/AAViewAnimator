@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     func animateWithTransition(_ animator: AAViewAnimators) {
-        animationView.aa_animate(duration: 1.2, springDamping: .slight, animation: animator) { inAnimating in
+        animationView.aa_animate(duration: 1.2, springDamping: .slight, animation: animator) { inAnimating, animView in
             
             if inAnimating {
                 print("Animating ....")
@@ -40,8 +40,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func hybridAction(_ sender: UIButton) {
-        
-        animationView.aa_animate(duration: 1.2, springDamping: .slight, animation: .fromTop) { inAnimating in
+        animationView.aa_animate(duration: 1.2, repeatCount: 1 ,springDamping: .slight, animation: .fromTop) { inAnimating, animView in
+            
+            if inAnimating {
+                print("Animating ....")
+            }
+            else {
+                print("Animation Done 👍🏻")
+            }
             
             guard inAnimating else {
                 return
@@ -49,6 +55,10 @@ class ViewController: UIViewController {
             
             self.animateWithTransition(.rotateRound)
         }
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//            self.animationView.removeAllAnimations()
+//        }
         
     }
     

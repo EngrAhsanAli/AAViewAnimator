@@ -25,12 +25,15 @@
 /// - rotateLeft: Animation with left rotation effect
 /// - rotateRight: Animation with right rotation effect
 /// - rotateRound: Animation with round rotation effect
+/// - zoomIn: Animation with zoom in effect
+/// - zoomOut: Animation with zoom out effect
 public enum AAViewAnimators {
     case fromTop, fromBottom, fromLeft, fromRight, fromFade
     case toTop, toBottom, toLeft, toRight, toFade
     case scale(rate:Float)
     case vibrateX(rate:CGFloat), vibrateY(rate:CGFloat)
     case rotateLeft, rotateRight, rotateRound
+    case zoomIn, zoomOut
 }
 
 /// AAViewDamping for springiness effect of view
@@ -51,3 +54,13 @@ public enum AAViewDamping {
         }
     }
 }
+
+public enum AAViewAnimationKey: String {
+    case rotation = "AAViewAnimatorRotation"
+    case scale = "AAViewAnimatorScale"
+    case vibrate = "AAViewAnimatorPosition"
+}
+
+
+
+

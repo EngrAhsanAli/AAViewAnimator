@@ -6,6 +6,8 @@
 //  Copyright © 2017 AA-Creations. All rights reserved.
 //
 
+public typealias IsAnimating = ((Bool, UIView) -> ())
+
 // MARK: - UIView+AAViewAnimator
 extension UIView {
     
@@ -13,13 +15,35 @@ extension UIView {
     ///
     /// - Parameters:
     ///   - duration: Time interval
+    ///   - repeatCount: Animation Repeatation
     ///   - springDamping: AAViewDamping damping effect
     ///   - animator: AAViewAnimators options
     ///   - completion: animation completion closure
-    open func aa_animate(duration: TimeInterval = 0.5, springDamping: AAViewDamping = .none,animation: AAViewAnimators, completion: ((_ isAnimating: Bool)->())? = nil) {
-        let animator = AAViewAnimator(self, duration: duration, animation: animation)
-        animator.animate(completion)
+    open func aa_animate(duration: TimeInterval = 0.5,
+                         repeatCount: Float = 1,
+                         springDamping: AAViewDamping = .none,
+                         animation: AAViewAnimators,
+                         completion: IsAnimating? = nil) {
+        
+        AAViewAnimator(self,
+                       duration: duration,
+                       repeatCount: repeatCount,
+                       springDamping: springDamping,
+                       animation: animation)
+            .animate(completion)
+        
     }
-
+    
+    func addAnimation(_ anim: CAAnimation, forKey: AAViewAnimationKey) {
+        layer.add(anim, forKey: forKey.rawValue)
+    }
+    
+    open func removeAnimation(_ forKey: AAViewAnimationKey) {
+        layer.removeAnimation(forKey: forKey.rawValue)
+    }
+    
+    open func removeAllAnimations() {
+        layer.removeAllAnimations()
+    }
 }
 

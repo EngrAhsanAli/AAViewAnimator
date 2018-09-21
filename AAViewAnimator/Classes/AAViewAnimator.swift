@@ -16,6 +16,9 @@ open class AAViewAnimator {
     /// UIView instance
     fileprivate var view: UIView
     
+    /// Auto repeat
+    fileprivate var repeatCount: Float
+    
     /// Time interval for animation
     fileprivate var duration: TimeInterval
     
@@ -23,12 +26,12 @@ open class AAViewAnimator {
     fileprivate var viewVisibility: Bool = true
     
     /// AAViewDamping for spring animation
-    fileprivate var springDamping: AAViewDamping = .none
+    fileprivate var springDamping: AAViewDamping
     
     /// AAViewAnimators animators
     fileprivate var animation: AAViewAnimators
     
-    fileprivate var isViewAnimating: ((_ flag: Bool)->())?
+    fileprivate var isViewAnimating: IsAnimating?
     
     /// AAViewAnimator init
     ///
@@ -37,31 +40,36 @@ open class AAViewAnimator {
     ///   - duration: Time Interval
     ///   - springDamping: AAViewDamping
     ///   - animator: AAViewAnimators
-    public init(_ view: UIView, duration: TimeInterval, springDamping: AAViewDamping? = nil, animation: AAViewAnimators) {
+    public init(_ view: UIView,
+                duration: TimeInterval,
+                repeatCount: Float,
+                springDamping: AAViewDamping?,
+                animation: AAViewAnimators) {
         self.view = view
         self.duration = duration
         self.animation = animation
-        
-        if let damping = springDamping {
-            self.springDamping = damping
-        }
+        self.repeatCount = repeatCount
+        self.springDamping = springDamping ?? .none
 
     }
     
     /// Animate with AAViewAnimators options
     ///
     /// - Parameter completion: completion
-    func animate(_ completion: ((_ isAnimating: Bool)->())?) {
+    func animate(_ completion: IsAnimating?) {
         
         self.isViewAnimating = completion
         
         switch animation {
         case .vibrateX, .vibrateY, .scale,
+             .zoomIn, .zoomOut,
              .rotateLeft, .rotateRight, .rotateRound:
             viewAnimation()
         case .fromTop, .fromBottom, .fromLeft, .fromRight, .fromFade,
              .toTop, .toBottom, .toLeft, .toRight, .toFade:
             viewTransition()
+
+            break
         }
     }
     
@@ -70,28 +78,32 @@ open class AAViewAnimator {
         
         CATransaction.begin()
         CATransaction.setCompletionBlock({
-            self.isViewAnimating?(false)
+            self.isViewAnimating?(false, self.view)
         })
         
         switch animation {
-        case .vibrateX(let rate):
-            self.vibrate(rate, vibrateX: true)
-        case .vibrateY(let rate):
-            self.vibrate(rate, vibrateX: false)
-        case .scale(let rate):
-            self.scaleBounce(rate)
-        case .rotateLeft:
-            self.rotateHorizontal(true)
-        case .rotateRight:
-            self.rotateHorizontal(false)
-        case .rotateRound:
-            self.rotateRound()
-        default:
-            break
+            case .vibrateX(let rate): vibrate(rate, vibrateX: true)
+            
+            case .vibrateY(let rate): vibrate(rate, vibrateX: false)
+            
+            case .scale(let rate): scaleBounce(rate)
+            
+            case .rotateLeft: rotateHorizontal(true)
+            
+            case .rotateRight: rotateHorizontal(false)
+            
+            case .rotateRound: rotateRound()
+            
+            case .zoomIn: zoomIn()
+            
+            case .zoomOut:  zoomOut()
+            
+            default:
+                break
         }
         
         CATransaction.commit()
-        self.isViewAnimating?(true)
+        isViewAnimating?(true, view)
     }
     
     /// View Transitions
@@ -148,14 +160,14 @@ open class AAViewAnimator {
         let (damping, velocity) = springDamping.values
 
         UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: [.allowUserInteraction], animations: {
-            
+            self.setRepeatCount()
             self.view.transform = end
             self.view.alpha = alphaEnd
             
-            self.isViewAnimating?(true)
+            self.isViewAnimating?(true, self.view)
             
         }) { _ in
-            self.isViewAnimating?(false)
+            self.isViewAnimating?(false, self.view)
         }
     }
     
@@ -168,8 +180,9 @@ open class AAViewAnimator {
     fileprivate func vibrate(_ rate: CGFloat, vibrateX: Bool) {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = duration
-        animation.repeatCount = Float(rate/(rate/2))
+        animation.repeatCount = repeatCount
         animation.autoreverses = true
+        animation.isRemovedOnCompletion = true
         
         if vibrateX {
             animation.fromValue = NSValue(cgPoint: CGPoint(x: view.center.x - rate, y: view.center.y))
@@ -180,17 +193,8 @@ open class AAViewAnimator {
             animation.toValue = NSValue(cgPoint: CGPoint(x: view.center.x, y: view.center.y + rate))
         }
         
-        view.layer.add(animation, forKey: "AAViewAnimatorPosition")
-    }
-    
-    /// Scale bounce effect
-    ///
-    /// - Parameter rate: Float
-    fileprivate func scaleBounce(_ rate:Float) {
-        let animation = CAKeyframeAnimation(keyPath: "transform.scale")
-        animation.duration = duration
-        animation.values = [1.0,rate*1.1,1.1,0.8,1.0]
-        view.layer.add(animation, forKey: "AAViewAnimatorScale")
+        view.addAnimation(animation, forKey: .vibrate)
+        
     }
     
     /// Rotates the view horizontally
@@ -200,7 +204,22 @@ open class AAViewAnimator {
         
         let direction: UIViewAnimationOptions = fromLeft ? .transitionFlipFromLeft : .transitionFlipFromRight
         
-        UIView.transition(with: view, duration: duration, options: direction, animations: nil, completion: nil)
+        UIView.transition(with: view, duration: duration, options: direction, animations: {
+            self.setRepeatCount()
+        }, completion: nil)
+
+    }
+    
+    /// Scale bounce effect
+    ///
+    /// - Parameter rate: Float
+    fileprivate func scaleBounce(_ rate:Float) {
+        let animation = CAKeyframeAnimation(keyPath: "transform.scale")
+        animation.duration = duration
+        animation.repeatCount = repeatCount
+        animation.values = [1.0,rate*1.1,1.1,0.8,1.0]
+        animation.isRemovedOnCompletion = true
+        view.addAnimation(animation, forKey: .scale)
     }
     
     /// Rotates the view at 360 degree
@@ -209,10 +228,41 @@ open class AAViewAnimator {
         animation.fromValue = 0.0
         animation.toValue = CGFloat(.pi * 2.0)
         animation.duration = duration
-        animation.isRemovedOnCompletion = false
-        view.layer.add(animation, forKey: "AAViewAnimatorRotation")
+        animation.repeatCount = repeatCount
+        animation.isRemovedOnCompletion = true
+        view.addAnimation(animation, forKey: .rotation)
     }
 
+    /// Zoom in effect of view
+    fileprivate func zoomIn() {
+        
+        self.scaledHidden()
+        UIView.animate(withDuration: duration, animations: {
+            self.view.transform = .identity
+        }, completion: nil)
+
+    }
+    
+    /// Zoom out effect of view
+    fileprivate func zoomOut() {
+        
+        UIView.animate(withDuration: duration, animations: {
+            self.view.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        }) { _ in
+            self.scaledHidden()
+        }
+
+    }
+    
+    /// Set global animation repeat count
+    fileprivate func setRepeatCount() {
+        UIView.setAnimationRepeatCount(repeatCount)
+    }
+    
+    /// Hide a view with scale transformation to zero
+    fileprivate func scaledHidden() {
+        view.transform = CGAffineTransform(scaleX: 0, y: 0)
+    }
 }
 
 
