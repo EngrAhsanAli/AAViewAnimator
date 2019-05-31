@@ -202,7 +202,7 @@ open class AAViewAnimator {
     /// - Parameter isLeft: Bool
     fileprivate func rotateHorizontal(_ fromLeft: Bool) {
         
-        let direction: UIViewAnimationOptions = fromLeft ? .transitionFlipFromLeft : .transitionFlipFromRight
+        let direction: UIView.AnimationOptions = fromLeft ? .transitionFlipFromLeft : .transitionFlipFromRight
         
         UIView.transition(with: view, duration: duration, options: direction, animations: {
             self.setRepeatCount()
